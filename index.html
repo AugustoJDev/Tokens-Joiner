@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Tokens Joiner</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+</head>
+<style>
+    @font-face {
+        font-family: Brightness;
+        src: url(Brightness.ttf);
+    }
+    body {
+      background-image: url('background.jpg');
+      background-repeat: no-repeat;
+    }
+    .title {
+        color:rgb(255, 255, 255);
+        font-family: Brightness;
+        font-size: 50px;
+        text-align: center;
+    }
+    form {
+        color: rgb(255, 255, 255);
+        text-align: center;
+    }
+    .button {
+        text-align: center;
+        width: 270px;
+        height: 40px;
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        font-size: medium;
+        margin-left: center;
+    }
+    .tokens {
+        width: 750px;
+        height: 300px;
+    }
+    .invite {
+        width: 300px;
+        height: 40px;
+        text-align: center;
+        margin-left: center;
+    }
+</style>
+<p CLASS="title">Tokens Joiner - WinchesterDev</p>
+<body>
+    <form NAME="myform" ACTION="" METHOD="POST"><BR>
+    <input TYPE="text" CLASS="tokens" NAME="tokens"><P>
+    <input TYPE="text" CLASS="invite" NAME="invite" VALUE="https://github.com/WinchesterDev"><P>
+    <input TYPE="button" CLASS="button" NAME="button" Value="Entrar no Servidor" onClick="receiveTokens(this.form)">
+    </form>
+
+    <script src='js/request.js'></script>
+</body>
+</html>
